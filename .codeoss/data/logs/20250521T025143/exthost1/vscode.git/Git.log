@@ -1,0 +1,86 @@
+2025-05-21 02:51:56.433 [info] [main] Log level: Info
+2025-05-21 02:51:56.433 [info] [main] Validating found git in: "git"
+2025-05-21 02:51:56.433 [info] [main] Using git "2.43.0" from "git"
+2025-05-21 02:51:56.433 [info] [Model][doInitialScan] Initial repository scan started
+2025-05-21 02:51:56.433 [info] > git rev-parse --show-toplevel [4ms]
+2025-05-21 02:51:56.433 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 02:51:56.433 [info] > git rev-parse --show-toplevel [3ms]
+2025-05-21 02:51:56.433 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 02:51:56.433 [info] > git rev-parse --show-toplevel [3ms]
+2025-05-21 02:51:56.433 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 02:51:56.434 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-21 02:51:56.435 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 02:51:56.440 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-21 02:51:56.440 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 02:51:56.446 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-21 02:51:56.446 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 02:51:56.451 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-21 02:51:56.451 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 02:51:56.451 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-05-21 02:51:59.057 [info] > git rev-parse --show-toplevel [4ms]
+2025-05-21 02:51:59.057 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 03:07:11.624 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-21 03:07:11.624 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 03:07:12.161 [info] > git rev-parse --show-toplevel [3ms]
+2025-05-21 03:07:12.161 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 03:07:15.548 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-21 03:07:15.548 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 03:07:16.057 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-21 03:07:16.057 [info] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-05-21 03:07:18.318 [info] > git rev-parse --show-toplevel [3ms]
+2025-05-21 03:07:18.328 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-05-21 03:07:18.343 [info] [Model][openRepository] Opened repository: /home/minhhieu_1998_mhl
+2025-05-21 03:07:18.357 [info] > git config --get commit.template [3ms]
+2025-05-21 03:07:18.370 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2025-05-21 03:07:18.378 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/minhhieu_1998_mhl/.git/refs/remotes/origin/master'
+2025-05-21 03:07:18.380 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2025-05-21 03:07:18.403 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-05-21 03:07:18.408 [info] > git status -z -uall [20ms]
+2025-05-21 03:07:18.497 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [64ms]
+2025-05-21 03:07:18.506 [info] > git config --get commit.template [15ms]
+2025-05-21 03:07:18.507 [info] > git config --local branch.master.vscode-merge-base [3ms]
+2025-05-21 03:07:18.507 [warning] [Git][config] git config failed: Failed to execute git
+2025-05-21 03:07:18.529 [info] > git reflog master --grep-reflog=branch: Created from *. [14ms]
+2025-05-21 03:07:18.539 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [16ms]
+2025-05-21 03:07:18.548 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/minhhieu_1998_mhl/.git/refs/remotes/origin/master'
+2025-05-21 03:07:18.549 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [11ms]
+2025-05-21 03:07:18.549 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-05-21 03:07:18.549 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-05-21 03:07:18.560 [info] > git rev-parse refs/remotes/origin/master [12ms]
+2025-05-21 03:07:18.581 [info] > git merge-base refs/heads/master refs/remotes/origin/master [24ms]
+2025-05-21 03:07:18.592 [info] > git status -z -uall [23ms]
+2025-05-21 03:07:18.594 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [14ms]
+2025-05-21 03:07:18.616 [info] > git merge-base refs/heads/master refs/remotes/origin/master [4ms]
+2025-05-21 03:07:18.626 [info] > git diff --name-status -z --diff-filter=ADMR 60f1339efe64ae7fbf4af2aa2c9f40258832f12d...refs/remotes/origin/master [35ms]
+2025-05-21 03:07:18.628 [info] > git diff --name-status -z --diff-filter=ADMR 60f1339efe64ae7fbf4af2aa2c9f40258832f12d...refs/remotes/origin/master [3ms]
+2025-05-21 03:07:19.035 [info] > git check-ignore -v -z --stdin [1ms]
+2025-05-21 03:07:21.269 [info] > git show --textconv :Dockerfile [12ms]
+2025-05-21 03:07:21.271 [info] > git ls-files --stage -- /home/minhhieu_1998_mhl/Dockerfile [7ms]
+2025-05-21 03:07:21.280 [info] > git cat-file -s 449d5ec368dca706a659157d1a11193a4e2da78a [2ms]
+2025-05-21 03:07:22.695 [info] > git config --get commit.template [8ms]
+2025-05-21 03:07:22.696 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-21 03:07:22.703 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/minhhieu_1998_mhl/.git/refs/remotes/origin/master'
+2025-05-21 03:07:22.704 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2025-05-21 03:07:22.719 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [2ms]
+2025-05-21 03:07:22.722 [info] > git status -z -uall [12ms]
+2025-05-21 03:12:21.884 [info] > git check-ignore -v -z --stdin [3ms]
+2025-05-21 03:25:22.599 [info] > git config --get commit.template [9ms]
+2025-05-21 03:25:22.601 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-05-21 03:25:22.607 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/minhhieu_1998_mhl/.git/refs/remotes/origin/master'
+2025-05-21 03:25:22.609 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2025-05-21 03:25:22.623 [info] > git status -z -uall [8ms]
+2025-05-21 03:25:22.625 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+2025-05-21 03:25:22.639 [info] > git merge-base refs/heads/master refs/remotes/origin/master [2ms]
+2025-05-21 03:25:22.647 [info] > git diff --name-status -z --diff-filter=ADMR 60f1339efe64ae7fbf4af2aa2c9f40258832f12d...refs/remotes/origin/master [2ms]

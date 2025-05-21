@@ -1,0 +1,126 @@
+pipeline {
+    agent any
+    tools {
+        jdk "jdk17"
+        nodejs "node16"
+    }
+    environment {
+        SCANNER_HOME = tool "sonar-scanner"
+        GIT_REPO_NAME = "Tetris-argocd"
+        GIT_USER_NAME = "HoangPhan10"
+    }
+    stages {
+        stage("Clean workspace") {
+      steps {
+        cleanWs()
+      }
+        }
+        stage("Initialize") {
+      steps {
+        script {
+          env.VERSION_ID = "v1.${env.BUILD_NUMBER}"
+          echo "Version ID: ${env.VERSION_ID}"
+        }
+      }
+        }
+        stage("Checkout from Git") {
+      steps {
+        git branch: "master", url: "https://github.com/HoangPhan10/Tetris-v2.git"
+      }
+        }
+        stage("Sonarqube Analysis") {
+      steps {
+          withSonarQubeEnv("sonar-server") {
+            sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Tetrisv2 \
+                    -Dsonar.projectKey=Tetrisv2 '''
+        }
+        }
+      }
+        stage("Quality gate") {
+      steps {
+          script {
+            waitForQualityGate abortPipeline: false, credentialsId: "Sonar-token"
+        }
+        }
+      }
+        stage("Install Dependencies") {
+      steps {
+        sh "npm install"
+      }
+        }
+        stage("OWASP FS SCAN") {
+        steps {
+          dependencyCheck additionalArguments: "--scan ./ --disableYarnAudit --disableNodeAudit", odcInstallation: "DP-Check"
+          dependencyCheckPublisher pattern: "**/dependency-check-report.xml"
+      }
+        }
+        stage("TRIVY FS SCAN") {
+      steps {
+        sh "trivy fs . > trivyfs.txt"
+      }
+        }
+        stage("Build Docker Image") {
+      steps {
+          script {
+            sh "docker build -t tetrisv2:${env.VERSION_ID} ."
+          }
+      }
+        }
+        stage("Push Docker Image") {
+      steps {
+          script {
+            withDockerRegistry(credentialsId: "Docker") {
+              sh "docker tag tetrisv2:${env.VERSION_ID} phanhoang102/tetrisv2:${env.VERSION_ID}"
+              sh "docker push phanhoang102/tetrisv2:${env.VERSION_ID}"
+              sh "docker rmi tetrisv2:${env.VERSION_ID} phanhoang102/tetrisv2:${env.VERSION_ID}"
+            }
+          }
+      }
+        }
+        stage("TRIVY") {
+      steps {
+        sh "trivy image phanhoang102/tetrisv2:${env.VERSION_ID} > trivyimage.txt"
+      }
+        }
+
+      //   stage("Checkout Code") {
+      // steps {
+      //   git branch: "master", url: "https://github.com/HoangPhan10/Tetris-argocd.git"
+      // }
+      //   }
+      //   stage("Update Deployment File") {
+      // steps {
+      //   script {
+      //     withCredentials([string(credentialsId: "Github", variable: "GITHUB_TOKEN")]) {
+      //       NEW_IMAGE_NAME = "phanhoang102/tetrisv2:${env.VERSION_ID}"
+      //       sh "sed -i 's|image: .*|image: $NEW_IMAGE_NAME|' deployment.yaml"
+      //       sh 'git add deployment.yaml'
+      //       sh "git commit -m 'Update deployment image to $NEW_IMAGE_NAME'"
+      //       sh "git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:master"
+      //     }
+      //   }
+      // }
+      //   }
+       stage('Trigger manifest') {
+    steps {
+        build job: 'Manifest',
+              wait: true,
+              parameters: [
+                  string(name: 'image', value: "phanhoang102/tetrisv2:${env.VERSION_ID}")
+              ]
+    }
+}
+        }
+ post {
+     always {
+        emailext attachLog: true,
+            subject: "'${currentBuild.result}'",
+            body: "Project: ${env.JOB_NAME}<br/>" +
+                "Build Number: ${env.BUILD_NUMBER}<br/>" +
+                "URL: ${env.BUILD_URL}<br/>",
+            to: 'phanhoang1022002@gmail.com',
+            attachmentsPattern: 'trivyfs.txt,trivyimage.txt'
+        }
+    }
+
+}

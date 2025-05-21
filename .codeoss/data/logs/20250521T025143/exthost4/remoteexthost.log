@@ -1,0 +1,189 @@
+2025-05-21 03:26:37.390 [info] Extension host with pid 5274 started
+2025-05-21 03:26:37.390 [error] Error: EEXIST: file already exists, open '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d/vscode.lock'
+2025-05-21 03:26:37.402 [info] Lock '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-05-21 03:26:37.408 [info] Lock '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d/vscode.lock': The lock does not look stale, elapsed: 188 ms, giving up.
+2025-05-21 03:26:37.409 [error] Error: EEXIST: file already exists, open '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d-1/vscode.lock'
+2025-05-21 03:26:37.409 [info] Lock '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d-1/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-05-21 03:26:37.410 [info] Lock '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d-1/vscode.lock': The lock does not look stale, elapsed: 698 ms, giving up.
+2025-05-21 03:26:37.415 [error] Error: EEXIST: file already exists, open '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d-2/vscode.lock'
+2025-05-21 03:26:37.416 [info] Lock '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d-2/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-05-21 03:26:37.416 [info] Lock '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d-2/vscode.lock': The lock does not look stale, elapsed: 196 ms, giving up.
+2025-05-21 03:26:37.423 [info] Lock '/home/minhhieu_1998_mhl/.codeoss/data/User/workspaceStorage/54b38d-3/vscode.lock': Lock acquired.
+2025-05-21 03:26:37.474 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-05-21 03:26:37.578 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-05-21 03:26:37.642 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-05-21 03:26:37.642 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-21 03:26:38.038 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-05-21 03:26:39.927 [info] Eager extensions activated
+2025-05-21 03:26:39.928 [info] ExtensionService#_doActivateExtension EditorConfig.EditorConfig, startup: false, activationEvent: 'onStartupFinished'
+2025-05-21 03:26:39.929 [info] ExtensionService#_doActivateExtension google.cloud-shell, startup: false, activationEvent: 'onStartupFinished'
+2025-05-21 03:26:39.929 [info] ExtensionService#_doActivateExtension google.geminicodeassist, startup: false, activationEvent: 'onStartupFinished', root cause: googlecloudtools.cloudcode
+2025-05-21 03:26:39.930 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-21 03:26:39.930 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-21 03:26:41.365 [info] ExtensionService#_doActivateExtension googlecloudtools.cloudcode, startup: false, activationEvent: 'onStartupFinished'
+2025-05-21 03:26:43.628 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-05-21 03:26:43.628 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-05-21 03:26:43.629 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:40.734 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.735 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.740 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.740 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.742 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.742 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.744 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.744 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.746 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.746 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.747 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.748 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.748 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.750 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.750 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.750 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.752 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.752 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.752 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.754 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:32:41.754 [error] Error: Git error
+    at ChildProcess.<anonymous> (/google/devshell/editor/code-oss-for-cloud-shell/extensions/git/dist/main.js:2:253171)
+    at ChildProcess.emit (node:events:531:35)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+2025-05-21 03:33:32.682 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-21 03:33:32.682 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-05-21 03:33:33.301 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
