@@ -34,3 +34,6 @@ git commit -m "init project"
 git push
 git add *
 git status
+git add .
+git commit -m "init project"
+git push
