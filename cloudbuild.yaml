@@ -17,7 +17,7 @@ steps:
       - '--image'
       - '$_AR_HOSTNAME/$PROJECT_ID/$_AR_REPO/$_SERVICE_NAME:$COMMIT_SHA'
       - '--region'
-      - $_DEPLOY_REGION
+      - $_DEFAULT_REGION
       - '--platform'
       - $_PLATFORM
     entrypoint: gcloud
